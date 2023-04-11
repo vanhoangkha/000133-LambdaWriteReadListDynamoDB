@@ -1,9 +1,9 @@
 ---
 title : "Create deleting function"
 date : "`r Sys.Date()`"
-weight : 1
+weight : 3
 chapter : false
-pre : " <b> 2.1 </b> "
+pre : " <b> 2.3 </b> "
 ---
 In this section, we will create a function to delete document information stored in the DynamoDB table by user id and filename.
 
