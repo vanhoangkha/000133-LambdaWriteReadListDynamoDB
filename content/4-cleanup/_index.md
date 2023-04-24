@@ -29,6 +29,7 @@ pre : " <b> 4. </b> "
 - Select **Delete**
 - Enter **delete** and click **Delete**
 - Similar to **resize_image** function
+
 {{% notice note %}}
 If you continue with workshop 2 of the series, you can skip the step of deleting the Lambda function.
 {{% /notice %}}

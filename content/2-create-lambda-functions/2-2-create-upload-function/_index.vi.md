@@ -25,21 +25,18 @@ import os
 from datetime import datetime, timezone
 
 dynamodb = boto3.resource('dynamodb')
+client_cloudwatch = boto3.client('cloudwatch')
 
 def lambda_handler(event, context):
     table_name = os.environ['TABLE_NAME']
     now = datetime.now(tz=timezone.utc)
     dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-    # docs_data = json.loads(event["body"])
-    docs_data = event["body"]
-    print(docs_data)
-    for item in docs_data:
-        print(item)
-        path = "protected/{}/{}".format(item['identityId'], item['file'])
-        
-        item.update({"path": path, "modified": dt_string})
-        table = dynamodb.Table(table_name)
-        table.put_item(Item = item)
+    doc_data = json.loads(event["body"])
+
+    path = "protected/{}/{}".format(doc_data['identityId'], doc_data['file'])
+    doc_data.update({"path": path, "modified": dt_string})
+    table = dynamodb.Table(table_name)
+    table.put_item(Item = doc_data)
         
     # TODO implement
     return {

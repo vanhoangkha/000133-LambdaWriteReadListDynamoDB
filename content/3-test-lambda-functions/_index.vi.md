@@ -41,8 +41,7 @@ Trong phần này chúng ta sẽ tạo kiểm tra xem các function có hoạt �
 - Nhập đoạn json dưới đây cho **Event JSON**
 ```
 {
-  "body": [
-    {
+  "body": {
       "user_id": "abcd1234",
       "file": "aws_serverless.doc",
       "folder": "",
@@ -51,8 +50,7 @@ Trong phần này chúng ta sẽ tạo kiểm tra xem các function có hoạt �
       "size": "2MB",
       "type": "doc",
       "tag": "aws, serverless"
-    }
-  ]
+  }
 }
 ```
 3. Ấn **Save**, sau đó ấn **Test**

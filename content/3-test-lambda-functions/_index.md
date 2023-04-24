@@ -41,8 +41,7 @@ To test the functions, download the following file to your computer and run the 
 - Enter the below json for **Event JSON**
 ```
 {
-  "body": [
-    {
+  "body":{
       "user_id": "abcd1234",
       "file": "aws_serverless.doc",
       "folder": "",
@@ -51,8 +50,7 @@ To test the functions, download the following file to your computer and run the 
       "size": "2MB",
       "type": "doc",
       "tag": "aws, serverless"
-    }
-  ]
+  }
 }
 ```
 3. Click **Save**, then click**Test**

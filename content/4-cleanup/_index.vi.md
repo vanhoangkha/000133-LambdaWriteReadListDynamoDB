@@ -18,6 +18,7 @@ pre : " <b> 4. </b> "
 - Chọn **Delete**
 - Nhập **delete** và ấn **Delete**
 - Tương tự với **upload_document** và **delete_document** function
+
 {{% notice note %}}
 Nếu bạn tiếp tục với bài số 2 của series thì có thể bỏ qua bước xoá Lambda function.
 {{% /notice %}}
