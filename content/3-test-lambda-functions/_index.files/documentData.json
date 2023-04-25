@@ -22,7 +22,7 @@
               "S": "https://[S3_BUCKET_FILE_STORE].s3.[AWS_REGION].amazonaws.com/dynamoDB.json"
             },
             "size": {
-              "S": "10KB"
+              "N": "223607"
             },
             "type": {
               "S": "json"
@@ -55,7 +55,7 @@
                 "S": "https://[S3_BUCKET_FILE_STORE].s3.[AWS_REGION].amazonaws.com/Kahoot.xlsx"
               },
               "size": {
-                "S": "145KB"
+                "N": "9130"
               },
               "type": {
                 "S": "xlsx"
@@ -88,7 +88,7 @@
                 "S": "https://[S3_BUCKET_FILE_STORE].s3.[AWS_REGION].amazonaws.com/CloudDeployment.drawio.png"
               },
               "size": {
-                "S": "1MB"
+                "N": "4557"
               },
               "type": {
                 "S": "png"
@@ -121,7 +121,7 @@
                 "S": "https://[S3_BUCKET_FILE_STORE].s3.[AWS_REGION].amazonaws.com/aws-exports.js"
               },
               "size": {
-                "S": "423bytes"
+                "N": "423"
               },
               "type": {
                 "S": "js"

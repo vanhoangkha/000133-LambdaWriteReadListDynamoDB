@@ -22,10 +22,17 @@ Trong phần này chúng ta sẽ tạo function để liệt kê các tài liệ
 import json
 import boto3
 import os
+from decimal import *
 from boto3.dynamodb.types import TypeDeserializer
 
 dynamodb = boto3.client('dynamodb') 
 serializer = TypeDeserializer()
+
+class DecimalEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, Decimal):
+            return str(obj)
+        return json.JSONEncoder.default(self, obj)
 
 def deserialize(data):
     if isinstance(data, list):
@@ -59,7 +66,7 @@ def lambda_handler(event, context):
             "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE, OPTIONS",
             "Access-Control-Allow-Headers": "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method,X-Access-Token,XKey,Authorization"
         },
-        "body": json.dumps(format_data_docs)
+        "body": json.dumps(format_data_docs, cls=DecimalEncoder)
     }
 
 ```
