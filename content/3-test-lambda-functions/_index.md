@@ -35,7 +35,7 @@ To test the functions, download the following file to your computer and run the 
 ![LambdaConsole](/images/3-test-functions/3-test-functions-3.png?featherlight=false&width=90pc)
 
 #### Test creating function
-1. Open the **upload_documents** function console
+1. Open the **upload_document** function console
 2. Click **Test** tab
 - Enter `tc_1` for event name
 - Enter the below json for **Event JSON**

@@ -9,6 +9,6 @@ This section will create Lambda functions to interact with the DynamoDB table.
 
 #### Content
 
- 1. [Create listing function](2-1-create-lambda-function)
+ 1. [Create listing function](2-1-create-list-function/)
  2. [Create creating function](2-2-create-s3-bucket/)
  3. [Create deleting function](2-3-create-delete-function/)
