@@ -12,7 +12,7 @@ Trong phần này chúng ta sẽ tạo function để thêm thông tin tài li�
 ![LambdaConsole](/images/2-2-create-upload-function/2-2-create-upload-function-1.png?featherlight=false&width=90pc)
 
 3. Nhập tên function: `upload_document`
-- Chọn **Python 3.9** cho mục Runtime
+- Chọn **Python 3.11** cho mục Runtime
 - Nhấn nút **Create function**
 
 ![CreateFunction](/images/2-2-create-upload-function/2-2-create-upload-function-2.png?featherlight=false&width=90pc)
@@ -55,7 +55,7 @@ def lambda_handler(event, context):
 
 ![CreateFunction](/images/2-2-create-upload-function/2-2-create-upload-function-3.png?featherlight=false&width=90pc)
 
-Đoạn code trên thực hiện lấy biến môi trường **TABLE_NAME** và dữ liệu của event. Sau đó thêm từng item vào DynamoDB table.
+Đoạn code trên thực hiện lấy biến môi trường **TABLE_NAME** và dữ liệu mà người dùng gửi lên. Sau đó thêm từng item vào DynamoDB table.
 
 5. Chúng ta cần thêm biến môi trường cho function. Ấn tab **Configuration**, sau đó chọn **Environment variables** ở menu phía bên trái. Ấn **Edit**
 
@@ -78,7 +78,7 @@ def lambda_handler(event, context):
 
 ![Permission](/images/2-2-create-upload-function/2-2-create-upload-function-7.png?featherlight=false&width=90pc)
 
-9. Chọn tab **JSON**. Sao chép đoạn json dưới đây vào editor
+9. Sao chép đoạn json dưới đây vào editor
 ```json
 ,
         {

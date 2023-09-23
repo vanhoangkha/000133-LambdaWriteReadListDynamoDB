@@ -12,7 +12,7 @@ Trong phần này chúng ta sẽ tạo function để liệt kê các tài liệ
 ![LambdaConsole](/images/2-1-create-list-function/2-1-create-list-function-1.png?featherlight=false&width=90pc)
 
 3. Nhập tên function: `list_documents`
-- Chọn **Python 3.9** cho mục Runtime
+- Chọn **Python 3.11** cho mục Runtime
 - Nhấn nút **Create function**
 
 ![CreateFunction](/images/2-1-create-list-function/2-1-create-list-function-2.png?featherlight=false&width=90pc)
@@ -75,7 +75,7 @@ def lambda_handler(event, context):
 
 ![CreateFunction](/images/2-1-create-list-function/2-1-create-list-function-3.png?featherlight=false&width=90pc)
 
-Đoạn code trên thực hiện lấy biến môi trường **TABLE_NAME** và **id** của người dùng từ event. Sau đó **query** đến DynamoDB table với điều kiện giá trị của **Partition key** bằng id của người dùng. Sau đó định dạng lại dữ liệu được trả về sau khi query.
+Đoạn code trên thực hiện lấy biến môi trường **TABLE_NAME** và **id** của người dùng. Sau đó **query** đến DynamoDB table với điều kiện giá trị của **Partition key** bằng id của người dùng. Sau đó định dạng lại dữ liệu được trả về sau khi query.
 
 5. Chúng ta cần thêm biến môi trường cho function. Ấn tab **Configuration**, sau đó chọn **Environment variables** ở menu phía bên trái. Ấn **Edit**
 
@@ -98,7 +98,7 @@ def lambda_handler(event, context):
 
 ![Permission](/images/2-1-create-list-function/2-1-create-list-function-7.png?featherlight=false&width=90pc)
 
-9. Chọn tab **JSON**. Sao chép đoạn json dưới đây vào editor
+9. Sao chép đoạn json dưới đây vào editor
 ```json
 ,
         {

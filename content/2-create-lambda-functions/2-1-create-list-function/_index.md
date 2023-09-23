@@ -12,7 +12,7 @@ In this section we will create a function to list the documents stored in the Dy
 ![LambdaConsole](/images/2-1-create-list-function/2-1-create-list-function-1.png?featherlight=false&width=90pc)
 
 3. Enter function name: `list_documents`
-- Select **Python 3.9** for Runtime
+- Select **Python 3.11** for Runtime
 - Click **Create function**
 
 ![CreateFunction](/images/2-1-create-list-function/2-1-create-list-function-2.png?featherlight=false&width=90pc)
@@ -75,7 +75,7 @@ def lambda_handler(event, context):
 
 ![CreateFunction](/images/2-1-create-list-function/2-1-create-list-function-3.png?featherlight=false&width=90pc)
 
-The above code executes to get the user's **TABLE_NAME** and **id** environment variables from the event. Then **query** to the DynamoDB table provided that the value of **Partition key** is equal to the user's id. Then reformat the data returned after the query.
+The above code executes to get the **TABLE_NAME** and user's **id** environment variables. Then **query** to the DynamoDB table provided that the value of **Partition key** is equal to the user's id. Then reformat the data returned after the query.
 
 5. We need to add an environment variable to the function. Click the **Configuration** tab, then select **Environment variables** in the left menu. Press **Edit**
 
@@ -98,7 +98,7 @@ The above code executes to get the user's **TABLE_NAME** and **id** environment 
 
 ![Permission](/images/2-1-create-list-function/2-1-create-list-function-7.png?featherlight=false&width=90pc)
 
-9. Click **JSON** json. Copy the JSON below into the editor
+9. Copy the JSON below into the editor
 ```json
 ,
         {

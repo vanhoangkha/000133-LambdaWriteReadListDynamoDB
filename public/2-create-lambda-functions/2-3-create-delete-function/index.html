@@ -12,21 +12,21 @@
     <title>Create deleting function :: Serverless - Interacting with DynamoDB using Lambda</title>
 
     
-    <link href="/css/nucleus.css?1682436090" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1682436090" rel="stylesheet">
-    <link href="/css/hybrid.css?1682436090" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1682436090" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1682436090" rel="stylesheet">
-    <link href="/css/auto-complete.css?1682436090" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1682436090" rel="stylesheet">
-    <link href="/css/theme.css?1682436090" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1682436090" rel="stylesheet">
+    <link href="/css/nucleus.css?1695458552" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1695458552" rel="stylesheet">
+    <link href="/css/hybrid.css?1695458552" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1695458552" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1695458552" rel="stylesheet">
+    <link href="/css/auto-complete.css?1695458552" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1695458552" rel="stylesheet">
+    <link href="/css/theme.css?1695458552" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1695458552" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1682436090" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1695458552" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1682436090"></script>
+    <script src="/js/jquery-3.3.1.min.js?1695458552"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1682436090"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1682436090"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1695458552"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1695458552"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1682436090"></script>
+<script type="text/javascript" src="/js/search.js?1695458552"></script>
 
     
   </div>
@@ -361,7 +361,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>24-04-2023</font></i>
+        <i><font color=orange>23-09-2023</font></i>
     </left>
     <left>
         <br>
@@ -465,7 +465,7 @@
 </li>
 </ol>
 <ul>
-<li>Select <strong>Python 3.9</strong> for Runtime</li>
+<li>Select <strong>Python 3.11</strong> for Runtime</li>
 <li>Click <strong>Create function</strong></li>
 </ul>
 <p><img src="/images/2-3-create-delete-function/2-3-create-delete-function-2.png?featherlight=false&amp;width=90pc" alt="CreateFunction"></p>
@@ -519,7 +519,7 @@ def lambda_handler(event, context):
 <li>Then click <strong>Deploy</strong></li>
 </ul>
 <p><img src="/images/2-3-create-delete-function/2-3-create-delete-function-3.png?featherlight=false&amp;width=90pc" alt="CreateFunction"></p>
-<p>The above code executes to get the user&rsquo;s <strong>TABLE_NAME</strong> and <strong>id</strong> environment variables from the event. Then <strong>query</strong> to the DynamoDB table provided that the value of <strong>Partition key</strong> is equal to the user&rsquo;s id. Then reformat the data returned after the query.</p>
+<p>The above code executes to get the <strong>TABLE_NAME</strong> environment variable, <strong>partition key</strong> and <strong>sort key</strong> in request. Then execute the delete command to delete the item in the table with those <strong>partition key</strong> and <strong>sort key</strong>.</p>
 <ol start="5">
 <li>We need to add an environment variable to the function. Click the <strong>Configuration</strong> tab, then select <strong>Environment variables</strong> in the left menu. Press <strong>Edit</strong></li>
 </ol>
@@ -546,7 +546,7 @@ def lambda_handler(event, context):
 </ol>
 <p><img src="/images/2-3-create-delete-function/2-3-create-delete-function-7.png?featherlight=false&amp;width=90pc" alt="Permission"></p>
 <ol start="9">
-<li>Click <strong>JSON</strong> json. Copy the JSON below into the editor</li>
+<li>Copy the JSON below into the editor</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">,</span>
 </span></span><span style="display:flex;"><span>        {
@@ -747,19 +747,19 @@ def lambda_handler(event, context):
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1682436090"></script>
-    <script src="/js/perfect-scrollbar.min.js?1682436090"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1682436090"></script>
-    <script src="/js/jquery.sticky.js?1682436090"></script>
-    <script src="/js/featherlight.min.js?1682436090"></script>
-    <script src="/js/highlight.pack.js?1682436090"></script>
+    <script src="/js/clipboard.min.js?1695458552"></script>
+    <script src="/js/perfect-scrollbar.min.js?1695458552"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1695458552"></script>
+    <script src="/js/jquery.sticky.js?1695458552"></script>
+    <script src="/js/featherlight.min.js?1695458552"></script>
+    <script src="/js/highlight.pack.js?1695458552"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1682436090"></script>
-    <script src="/js/learn.js?1682436090"></script>
-    <script src="/js/hugo-learn.js?1682436090"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1695458552"></script>
+    <script src="/js/learn.js?1695458552"></script>
+    <script src="/js/hugo-learn.js?1695458552"></script>
 
-    <link href="/mermaid/mermaid.css?1682436090" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1682436090"></script>
+    <link href="/mermaid/mermaid.css?1695458552" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1695458552"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

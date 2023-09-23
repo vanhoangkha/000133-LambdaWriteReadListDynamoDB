@@ -5,6 +5,10 @@ weight : 4
 chapter : false
 pre : " <b> 4. </b> "
 ---
+{{% notice note %}}
+If you continue with workshop 2 of the series, you should skip the step of deleting the Lambda function.
+{{% /notice %}}
+
 1. Delete DynamoDB table
 - Open [DynamoDB console](https://ap-southeast-2.console.aws.amazon.com/dynamodbv2/home?region=ap-southeast-2#dashboard)
 - Select **Tables** on the left menu
@@ -29,7 +33,3 @@ pre : " <b> 4. </b> "
 - Select **Delete**
 - Enter **delete** and click **Delete**
 - Similar to **resize_image** function
-
-{{% notice note %}}
-If you continue with workshop 2 of the series, you can skip the step of deleting the Lambda function.
-{{% /notice %}}

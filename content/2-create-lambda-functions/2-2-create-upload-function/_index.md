@@ -12,7 +12,7 @@ This section will create a function to add document information stored in the Dy
 ![LambdaConsole](/images/2-2-create-upload-function/2-2-create-upload-function-1.png?featherlight=false&width=90pc)
 
 3. Enter function name: `upload_document`
-- Select **Python 3.9** for Runtime
+- Select **Python 3.11** for Runtime
 - Click **Create function**
 
 ![CreateFunction](/images/2-2-create-upload-function/2-2-create-upload-function-2.png?featherlight=false&width=90pc)
@@ -55,7 +55,7 @@ def lambda_handler(event, context):
 
 ![CreateFunction](/images/2-2-create-upload-function/2-2-create-upload-function-3.png?featherlight=false&width=90pc)
 
-The above code executes to get the environment variable **TABLE_NAME** and event data. Then add each item to the DynamoDB table.
+The above code executes to get the environment variables: **TABLE_NAME** and data of request. Then add each item to the DynamoDB table.
 
 5. We need to add an environment variable to the function. Click the **Configuration** tab, then select **Environment variables** in the left menu. Press **Edit**
 
@@ -78,7 +78,7 @@ The above code executes to get the environment variable **TABLE_NAME** and event
 
 ![Permission](/images/2-2-create-upload-function/2-2-create-upload-function-7.png?featherlight=false&width=90pc)
 
-9. Click **JSON** tab. Copy the JSON below into the editor
+9. Copy the JSON below into the editor
 ```json
 ,
         {

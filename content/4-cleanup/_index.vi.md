@@ -5,6 +5,10 @@ weight : 4
 chapter : false
 pre : " <b> 4. </b> "
 ---
+{{% notice note %}}
+Nếu bạn tiếp tục với bài số 2 của series thì nên bỏ qua bước xoá Lambda function.
+{{% /notice %}}
+
 1. Xoá bảng trong DynamoDB
 - Mở bảng điều khiển của [DynamoDB](https://ap-southeast-2.console.aws.amazon.com/dynamodbv2/home?region=ap-southeast-2#dashboard)
 - Chọn **Tables** ở menu phía bên trái
@@ -18,7 +22,3 @@ pre : " <b> 4. </b> "
 - Chọn **Delete**
 - Nhập **delete** và ấn **Delete**
 - Tương tự với **upload_document** và **delete_document** function
-
-{{% notice note %}}
-Nếu bạn tiếp tục với bài số 2 của series thì có thể bỏ qua bước xoá Lambda function.
-{{% /notice %}}

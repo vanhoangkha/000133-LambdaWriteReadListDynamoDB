@@ -7,10 +7,12 @@ pre : " <b> 3. </b> "
 ---
 Trong phần này chúng ta sẽ tạo kiểm tra xem các function có hoạt động đúng hay không.
 
-Để kiểm tra các function, bạn hãy tải tệp dưới đây về máy và chạy câu lệnh: 
+- Để kiểm tra các function, bạn hãy tải tệp dưới đây về máy:
+{{%attachments title="Document Data" pattern=".*\.json$"/%}}
+
+- Chạy câu lệnh sau để ghi dữ liệu vào bảng:
 `aws dynamodb batch-write-item --request-items file://documentData.json`
 
-{{%attachments title="Document Data" pattern=".*\.json$"/%}}
 
 ![LambdaConsole](/images/3-test-functions/3-test-functions-1.png?featherlight=false&width=90pc)
 

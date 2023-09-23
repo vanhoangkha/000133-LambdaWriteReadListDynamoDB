@@ -12,7 +12,7 @@ Trong phần này chúng ta sẽ tạo function để xoá thông tin tài liệ
 ![LambdaConsole](/images/2-3-create-delete-function/2-3-create-delete-function-1.png?featherlight=false&width=90pc)
 
 3. Nhập tên function: `delete_document`
-- Chọn **Python 3.9** cho mục Runtime
+- Chọn **Python 3.11** cho mục Runtime
 - Nhấn nút **Create function**
 
 ![CreateFunction](/images/2-3-create-delete-function/2-3-create-delete-function-2.png?featherlight=false&width=90pc)
@@ -68,7 +68,7 @@ def lambda_handler(event, context):
 
 ![CreateFunction](/images/2-3-create-delete-function/2-3-create-delete-function-3.png?featherlight=false&width=90pc)
 
-Đoạn code trên thực hiện lấy biến môi trường **TABLE_NAME** và **partition key** and **sort key** từ event. Sau đó thêm xoá item có **partition key** and **sort key** khớp với input.
+Đoạn code trên thực hiện lấy biến môi trường **TABLE_NAME**, **partition key** và **sort key** mà người dùng yêu cầu. Sau đó thực hiện câu lệnh xoá để xoá item trong bảng có **partition key** và **sort key** đó.
 
 5. Chúng ta cần thêm biến môi trường cho function. Ấn tab **Configuration**, sau đó chọn **Environment variables** ở menu phía bên trái. Ấn **Edit**
 
@@ -91,7 +91,7 @@ def lambda_handler(event, context):
 
 ![Permission](/images/2-3-create-delete-function/2-3-create-delete-function-7.png?featherlight=false&width=90pc)
 
-9. Chọn tab **JSON**. Sao chép đoạn json dưới đây vào editor
+9. Sao chép đoạn json dưới đây vào editor
 ```json
 ,
         {

@@ -12,21 +12,21 @@
     <title>Tạo function tạo dữ liệu :: Serverless - Interacting with DynamoDB using Lambda</title>
 
     
-    <link href="/css/nucleus.css?1682436090" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1682436090" rel="stylesheet">
-    <link href="/css/hybrid.css?1682436090" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1682436090" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1682436090" rel="stylesheet">
-    <link href="/css/auto-complete.css?1682436090" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1682436090" rel="stylesheet">
-    <link href="/css/theme.css?1682436090" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1682436090" rel="stylesheet">
+    <link href="/css/nucleus.css?1695458552" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1695458552" rel="stylesheet">
+    <link href="/css/hybrid.css?1695458552" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1695458552" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1695458552" rel="stylesheet">
+    <link href="/css/auto-complete.css?1695458552" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1695458552" rel="stylesheet">
+    <link href="/css/theme.css?1695458552" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1695458552" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1682436090" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1695458552" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1682436090"></script>
+    <script src="/js/jquery-3.3.1.min.js?1695458552"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1682436090"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1682436090"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1695458552"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1695458552"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1682436090"></script>
+<script type="text/javascript" src="/js/search.js?1695458552"></script>
 
     
   </div>
@@ -361,7 +361,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>24-04-2023</font></i>
+        <i><font color=orange>23-09-2023</font></i>
     </left>
     <left>
         <br>
@@ -465,7 +465,7 @@
 </li>
 </ol>
 <ul>
-<li>Chọn <strong>Python 3.9</strong> cho mục Runtime</li>
+<li>Chọn <strong>Python 3.11</strong> cho mục Runtime</li>
 <li>Nhấn nút <strong>Create function</strong></li>
 </ul>
 <p><img src="/images/2-2-create-upload-function/2-2-create-upload-function-2.png?featherlight=false&amp;width=90pc" alt="CreateFunction"></p>
@@ -506,7 +506,7 @@ def lambda_handler(event, context):
 <li>Sau đó ấn <strong>Deploy</strong></li>
 </ul>
 <p><img src="/images/2-2-create-upload-function/2-2-create-upload-function-3.png?featherlight=false&amp;width=90pc" alt="CreateFunction"></p>
-<p>Đoạn code trên thực hiện lấy biến môi trường <strong>TABLE_NAME</strong> và dữ liệu của event. Sau đó thêm từng item vào DynamoDB table.</p>
+<p>Đoạn code trên thực hiện lấy biến môi trường <strong>TABLE_NAME</strong> và dữ liệu mà người dùng gửi lên. Sau đó thêm từng item vào DynamoDB table.</p>
 <ol start="5">
 <li>Chúng ta cần thêm biến môi trường cho function. Ấn tab <strong>Configuration</strong>, sau đó chọn <strong>Environment variables</strong> ở menu phía bên trái. Ấn <strong>Edit</strong></li>
 </ol>
@@ -533,7 +533,7 @@ def lambda_handler(event, context):
 </ol>
 <p><img src="/images/2-2-create-upload-function/2-2-create-upload-function-7.png?featherlight=false&amp;width=90pc" alt="Permission"></p>
 <ol start="9">
-<li>Chọn tab <strong>JSON</strong>. Sao chép đoạn json dưới đây vào editor</li>
+<li>Sao chép đoạn json dưới đây vào editor</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">,</span>
 </span></span><span style="display:flex;"><span>        {
@@ -732,19 +732,19 @@ def lambda_handler(event, context):
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1682436090"></script>
-    <script src="/js/perfect-scrollbar.min.js?1682436090"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1682436090"></script>
-    <script src="/js/jquery.sticky.js?1682436090"></script>
-    <script src="/js/featherlight.min.js?1682436090"></script>
-    <script src="/js/highlight.pack.js?1682436090"></script>
+    <script src="/js/clipboard.min.js?1695458552"></script>
+    <script src="/js/perfect-scrollbar.min.js?1695458552"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1695458552"></script>
+    <script src="/js/jquery.sticky.js?1695458552"></script>
+    <script src="/js/featherlight.min.js?1695458552"></script>
+    <script src="/js/highlight.pack.js?1695458552"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1682436090"></script>
-    <script src="/js/learn.js?1682436090"></script>
-    <script src="/js/hugo-learn.js?1682436090"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1695458552"></script>
+    <script src="/js/learn.js?1695458552"></script>
+    <script src="/js/hugo-learn.js?1695458552"></script>
 
-    <link href="/mermaid/mermaid.css?1682436090" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1682436090"></script>
+    <link href="/mermaid/mermaid.css?1695458552" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1695458552"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

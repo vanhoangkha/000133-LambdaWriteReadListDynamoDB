@@ -7,10 +7,11 @@ pre : " <b> 3. </b> "
 ---
 In this section we will create tests to see if the functions are working properly.
 
-To test the functions, download the following file to your computer and run the command:
-`aws dynamodb batch-write-item --request-items file://documentData.json`
-
+- To test the functions, download the following file to your computer:
 {{%attachments title="Document Data" pattern=".*\.json$"/%}}
+
+- Run the following command to write data to table:
+`aws dynamodb batch-write-item --request-items file://documentData.json`
 
 ![LambdaConsole](/images/3-test-functions/3-test-functions-1.png?featherlight=false&width=90pc)
 
