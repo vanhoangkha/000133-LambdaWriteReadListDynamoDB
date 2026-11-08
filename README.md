@@ -1,4 +1,4 @@
-# ⚡ Lambda CRUD with DynamoDB
+# Lambda CRUD with DynamoDB
 
 Build CRUD operations with Lambda and DynamoDB.
 
@@ -8,7 +8,7 @@ This is a hands-on workshop from the **AWS First Cloud Journey** series.
 
 ## Workshop
 
-📖 **[Start the workshop](https://vanhoangkha.github.io/000133-LambdaWriteReadListDynamoDB/)**
+**[Start the workshop](https://vanhoangkha.github.io/000133-LambdaWriteReadListDynamoDB/)**
 
 ## Prerequisites
 
